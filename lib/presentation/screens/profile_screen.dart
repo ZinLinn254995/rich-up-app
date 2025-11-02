@@ -28,14 +28,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   // 🖼️ ပရိုဖိုင်ပုံကို ClipOval နှင့် BoxFit.cover ဖြင့် ပိုမို fit ဖြစ်အောင် ပြင်ဆင်ထားသည့် Function
   Widget _buildProfileAvatar(UserEntity user) {
-    final hasPhotoUrl = user.photoUrl != null && user.photoUrl!.isNotEmpty;
+    final hasPhotoUrl = user.photoURL != null && user.photoURL!.isNotEmpty;
     const double radius = 40; // ဓာတ်ပုံရဲ့ radius
 
     if (hasPhotoUrl) {
       // 💡 ပုံ URL ရှိရင် ClipOval ကို သုံးပြီး Image.network ကို BoxFit.cover ဖြင့် သုံးသည်
       return ClipOval(
         child: Image.network(
-          user.photoUrl!,
+          user.photoURL!,
           width: radius * 2, // 80.0
           height: radius * 2, // 80.0
           fit: BoxFit.cover, // 🛑 ပုံကို circle ထဲမှာ လုံးဝဖုံးအုပ်ပြီး crop လုပ်ပေးသည်
@@ -164,7 +164,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           uid: user.uid,
                           username: _usernameController.text.trim(),
                           email: user.email,
-                          photoUrl: user.photoUrl,
+                          photoURL: user.photoURL,
                         );
 
                         // 2. AuthViewModel မှတစ်ဆင့် save လုပ်ပြီး state ကို update လုပ်ပါ

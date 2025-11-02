@@ -6,14 +6,22 @@ class SignInWithGoogleUseCase {
   SignInWithGoogleUseCase(this.repository);
 
   Future<UserEntity?> execute() async {
-    final user = await repository.signInWithGoogle();
-    if (user == null) return null;
+    try {
+      final user = await repository.signInWithGoogle();
+      if (user == null) return null;
 
-    return UserEntity(
-      uid: user.uid,
-      username: null,
-      email: user.email,
-      photoUrl: user.photoURL,
-    );
+      print("✅ Google Sign-In Success - Creating UserEntity");
+      
+      // 🆕 Simple user creation without complex logic
+      return UserEntity(
+        uid: user.uid,
+        username: user.displayName,
+        email: user.email,
+        photoURL: user.photoURL,
+      );
+    } catch (e) {
+      print("❌ SignInWithGoogleUseCase Error: $e");
+      return null; // 🆕 Return null instead of rethrowing
+    }
   }
 }

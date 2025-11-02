@@ -1,4 +1,4 @@
-package com.example.rich_up
+package com.simplewaytechnology.rich_up
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:179343654407:android:34928e0b1a131f52aab4a2",
+        "mobilesdk_app_id": "1:179343654407:android:18cdba72c1038c15aab4a2",
         "android_client_info": {
-          "package_name": "com.example.rich_up"
+          "package_name": "com.simplewaytechnology.rich_up"
         }
       },
       "oauth_client": [
