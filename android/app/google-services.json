@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "179343654407",
+    "firebase_url": "https://richup-f0f05-default-rtdb.firebaseio.com",
+    "project_id": "richup-f0f05",
+    "storage_bucket": "richup-f0f05.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179343654407:android:34928e0b1a131f52aab4a2",
+        "android_client_info": {
+          "package_name": "com.example.rich_up"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179343654407-89mdu7ri77ja6ps7a6f7p5lmpkoc34f2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdhYe9oU868Rp0nb51AKbgjUJaL1rZmzo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179343654407-89mdu7ri77ja6ps7a6f7p5lmpkoc34f2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "179343654407-nr1ka72hqgrpevf4uquofgsast1nris7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.richUp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
